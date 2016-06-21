@@ -7,9 +7,12 @@
         <meta name="description" content="Website of Wikanda Phaphan">
         <meta name="google" content="notranslate">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.2.min.js" type="text/javascript"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/myjs.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="js/app.js"></script>
     </head>
     <body>
         <header>
@@ -25,50 +28,98 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="research.html">Research</a></li>
-                            <li><a href="biography.html">Biography</a></li>
-                            <li><a href="software.html">Software</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="research.html">Research</a>
+                            </li>
+                            <li>
+                                <a href="biography.html">Biography</a>
+                            </li>
+                            <li>
+                                <a href="software.html">Software</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-log-in"></span>
+                                    Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <section class="container-fluid">
+        <section class="container-fluid" ng-app="sortResearch" ng-controller="mainController">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <form>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search the Title" ng-model="searchTitle">
+                            </div>
+                        </div>
+                    </form>
+
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>Title</th>
-                                <th class="text-center">Author</th>
-                                <th>Year</th>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'Year'; sortReverse = !sortReverse">
+                                        <b>Year</b>
+                                        <span ng-show="sortType == 'Year' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'Year' && sortReverse" class="fa fa-caret-up"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'Title'; sortReverse = !sortReverse">
+                                        <b>Title</b>
+                                        <span ng-show="sortType == 'Title' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'Title' && sortReverse" class="fa fa-caret-up"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'Author'; sortReverse = !sortReverse">
+                                        <b>Author</b>
+                                        <span ng-show="sortType == 'Author' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'Author' && sortReverse" class="fa fa-caret-up"></span>
+                                    </a>
+                                </td>
                             </tr>
                         </thead>
+
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><a href="/files/paper/COMBINDED HEURISTIC MEHODS FOR TOTAL FLOW TIME MINIMIZATION IN PERMUTATION FLOW SHOPS SCHEDULING.pdf">Combined heuristic methods for total flow time minimization in permutation flow shops scheduling.</a></td>
-                                <td class="text-center">Wikanda Phaphan</td>
-                                <td>2011</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><a href="#">Asymptotic Properties and Parameter Estimation Based on Two-Sided Crack Distribution.</a></td>
-                                <td class="text-center">Wikanda Phaphan</td>
-                                <td>2016</td>
+                            <tr ng-repeat="roll in research | orderBy:sortType:sortReverse | filter:searchTitle">
+                                <td>
+                                    {{ roll.Year }}
+                                </td>
+                                <td>
+                                    <a href="{{ roll.DownloadLink }}">{{ roll.Title }}</a>
+                                </td>
+                                <td>
+                                    {{ roll.Author }}
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
+
     </body>
 </html>
