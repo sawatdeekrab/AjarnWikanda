@@ -93,6 +93,20 @@
                                         <span ng-show="sortType == 'Title' && sortReverse" class="fa fa-caret-up"></span>
                                     </a>
                                 </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'Language'; sortReverse = !sortReverse">
+                                        <b>Language</b>
+                                        <span ng-show="sortType == 'Language' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'Language' && sortReverse" class="fa fa-caret-up"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" ng-click="sortType = 'Publishing'; sortReverse = !sortReverse">
+                                        <b>Publishing</b>
+                                        <span ng-show="sortType == 'Publishing' && !sortReverse" class="fa fa-caret-down"></span>
+                                        <span ng-show="sortType == 'Publishing' && sortReverse" class="fa fa-caret-up"></span>
+                                    </a>
+                                </td>
                                 <!-- <td>
                                     <a href="#" ng-click="sortType = 'Author'; sortReverse = !sortReverse">
                                         <b>Author</b>
@@ -109,7 +123,13 @@
                                     {{ roll.Year }}
                                 </td>
                                 <td>
-                                    <a href="{{ roll.DownloadLink }}">{{ roll.Title }}</a>
+                                    <a href="{{ roll.DownloadLink }}" target="_blank">{{ roll.Title }}</a>
+                                </td>
+                                <td>
+                                    {{ roll.Language }}
+                                </td>
+                                <td>
+                                    {{ roll.Publishing }}
                                 </td>
                                 <!-- <td>
                                     {{ roll.Author }}
