@@ -11,7 +11,8 @@ angular.module('sortResearch', [])
     { Title: 'Asymptotic Properties and Parameter Estimation Based on Two-Sided Crack Distribution.', Language:'English',Publishing: 'Journals', Author: 'Wikanda Phaphan', Year: 2016, DownloadLink: '#'},
     { Title: 'Modifying Heuristic Methods to Minimize Total Flow Time in Permutation Flow Shop.', Language:'Thai',Publishing: 'Conference Proceedings', Author: 'Wikanda Phaphan', Year: 2016, DownloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261SUlFQkNjR05WSDQ'},
     { Title: 'A Modified Heuristic Algorithm for Total Flow Time Objecctive in Permutation Flow Shops Scheduling.', Language:'Thai',Publishing: 'Conference Proceedings', Author: 'Wikanda Phaphan', Year: 2016, DownloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261UHlreTNlMVFidGM'},
-    { Title: 'Parameters Estimation of the Birnbeum-Sanders Distribution Using EM-Algorithm.', Language:'Thai',Publishing: 'Conference Proceedings', Author: 'Wikanda Phaphan', Year: 2016, DownloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261VVBSeVdsaG1CeE0'}
+    { Title: 'Parameters Estimation of the BS Distribution Using EM-Algorithm.', Language:'Thai',Publishing: 'Conference Proceedings', Author: 'Wikanda Phaphan', Year: 2016, DownloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261VVBSeVdsaG1CeE0'},
+    { Title: 'Point Estimation of Birnbuam-Saunders Distribution Using EM-Algorithm.', Language:'English',Publishing: 'Journals', Author: 'Wikanda Phaphan', Year: 2017, DownloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261dFM3N3FOUUE1cGs'}
   ];
 
 });
