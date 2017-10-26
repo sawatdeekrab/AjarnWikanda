@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { TabsetComponent } from 'ngx-bootstrap';
+import { MenuItem } from 'primeng/primeng';
 
 
 
@@ -10,7 +11,7 @@ import { TabsetComponent } from 'ngx-bootstrap';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(
+  /*constructor(
     private router: Router) { }
 
   gotoBiography(): void {
@@ -21,5 +22,15 @@ export class AppComponent {
   }
   gotoContact(): void {
     this.router.navigate(['/contact'], { skipLocationChange: true });
+  }*/
+
+  items: MenuItem[];
+
+  ngOnInit() {
+    this.items = [
+      { label: 'Home', icon: 'fa-home', routerLink: "/biography" },
+      { label: 'Research', icon: 'fa-book', routerLink: "/research" },
+      { label: 'Contact', icon: 'fa-phone', routerLink: "/contact" }
+    ];
   }
 }

@@ -7,14 +7,14 @@ import { ResearchesComponent } from './researches.component';
 
 
 const routes: Routes = [
-  { path: '', component: BiographyComponent  },
-  { path: 'biography',  component: BiographyComponent },
+  { path: '', component: BiographyComponent  ,},
+  { path: 'biography',  component: BiographyComponent},
   { path: 'contact',  component: ContactComponent },
   { path: 'research',  component: ResearchesComponent }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

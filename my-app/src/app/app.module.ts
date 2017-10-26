@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TabsModule } from 'ngx-bootstrap';
+import { TabMenuModule } from 'primeng/primeng';
+import { DataTableModule, SharedModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { BiographyComponent } from './biography.component';
@@ -19,7 +21,10 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
+    TabMenuModule,
+    DataTableModule,
+    SharedModule
   ],
   providers: [ResearchService],
   bootstrap: [AppComponent]

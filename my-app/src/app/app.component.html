@@ -1,6 +1,2 @@
-<tabset>
-  <tab heading="Home" (select)="gotoBiography()"></tab>
-  <tab heading="Research" (select)="gotoResearch()"></tab>
-  <tab heading="Contact" (select)="gotoContact()"></tab>
-</tabset>
+<p-tabMenu [model]="items"></p-tabMenu>
 <router-outlet></router-outlet>
