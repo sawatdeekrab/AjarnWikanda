@@ -10,6 +10,7 @@ import { ResearchService } from './research.service';
 })
 export class ResearchesComponent implements OnInit {
   researches: Research[];
+  stacked;
 
   constructor(
     private researchService: ResearchService,
