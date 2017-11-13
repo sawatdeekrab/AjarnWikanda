@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TabsModule } from 'ngx-bootstrap';
-import { TabMenuModule } from 'primeng/primeng';
+import { MenubarModule } from 'primeng/primeng';
 import { DataTableModule, SharedModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
@@ -22,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     TabsModule.forRoot(),
-    TabMenuModule,
+    MenubarModule,
     DataTableModule,
     SharedModule
   ],
