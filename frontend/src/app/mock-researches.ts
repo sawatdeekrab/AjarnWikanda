@@ -1,6 +1,7 @@
 import { Research } from './research';
 
 export const RESEARCHES: Research[] = [
+    { year: 2018, title: 'Estimation of Asymptotic Confidence Ellipses for Birnbaum-Saunders Distribution.', language: 'Thai', publishing: 'Journals', downloadLink: 'http://science.buu.ac.th/ojs246/index.php/sci/article/view/2093' },
     { year: 2018, title: 'Estimating Parameter for the Mixture Generalized Gamma Distribution.', language: 'English', publishing: 'Conference Proceedings', downloadLink: 'https://dl.acm.org/citation.cfm?id=3177492' },
     { year: 2017, title: 'Parameter Estimation of the Crack Lifetime Distribution Using the Expectation–Maximization Algorithm.', language: 'English', publishing: 'Journals', downloadLink: 'http://dx.doi.org/10.17654/MS102050933' },
     { year: 2017, title: 'A New Hybrid Heuristic for Minimizing Total Flow Time in Permutation Flow Shop.', language: 'English', publishing: 'Conference Proceedings', downloadLink: 'https://dl.acm.org/citation.cfm?id=3133814' },
@@ -11,4 +12,5 @@ export const RESEARCHES: Research[] = [
     { year: 2016, title: 'Modifying Heuristic Methods to Minimize Total Flow Time in Permutation Flow Shop.', language: 'Thai', publishing: 'Conference Proceedings', downloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261SUlFQkNjR05WSDQ' },
     { year: 2016, title: 'Asymptotic Properties and Parameter Estimation Based on Two-Sided Crack Distribution.', language: 'English', publishing: 'Journals', downloadLink: '#' },
     { year: 2011, title: 'Combined heuristic methods for total flow time minimization in permutation flow shops scheduling.', language: 'English', publishing: 'Conference Proceedings', downloadLink: 'https://drive.google.com/open?id=0B-PcDocGk261Z3YwbFJTUUtNazg' }
+    
 ];
