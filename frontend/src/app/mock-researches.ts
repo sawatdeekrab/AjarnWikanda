@@ -1,6 +1,7 @@
 import { Research } from './research';
 
 export const RESEARCHES: Research[] = [
+    { year: 2019, title: 'Estimating the Parameters of a Two-parameter Crack Distribution', language: 'English', publishing: 'Journals', downloadLink: 'http://ojs.kmutnb.ac.th/index.php/ijst/article/view/1067' },
     { year: 2018, title: 'Estimation of Asymptotic Confidence Ellipses for Birnbaum-Saunders Distribution.', language: 'Thai', publishing: 'Journals', downloadLink: 'http://science.buu.ac.th/ojs246/index.php/sci/article/view/2093' },
     { year: 2018, title: 'Estimating Parameter for the Mixture Generalized Gamma Distribution.', language: 'English', publishing: 'Conference Proceedings', downloadLink: 'https://dl.acm.org/citation.cfm?id=3177492' },
     { year: 2017, title: 'Parameter Estimation of the Crack Lifetime Distribution Using the Expectation–Maximization Algorithm.', language: 'English', publishing: 'Journals', downloadLink: 'http://dx.doi.org/10.17654/MS102050933' },
