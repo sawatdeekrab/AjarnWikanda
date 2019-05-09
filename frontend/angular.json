@@ -22,7 +22,8 @@
             ],
             "styles": [
               "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeng/resources/themes/omega/theme.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/luna-pink/theme.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
@@ -76,7 +77,8 @@
             "scripts": [],
             "styles": [
               "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeng/resources/themes/omega/theme.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/luna-ping/theme.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"

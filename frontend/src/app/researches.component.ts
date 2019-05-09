@@ -11,6 +11,7 @@ import { ResearchService } from './research.service';
 export class ResearchesComponent implements OnInit {
   researches: Research[];
   stacked;
+  cols: any[];
 
   constructor(
     private researchService: ResearchService,
@@ -22,6 +23,13 @@ export class ResearchesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getResearches();
+    this.cols = [
+      { field: 'year', header: 'Year' , width: '10%'},
+      { field: 'title', header: 'Title' , width: '60%'},
+      { field: 'publishing', header: 'Publishing', width: '20%' },
+      { field: 'language', header: 'Language' , width: '10%'}
+      
+  ];
   }
   sortF: string = '';
   selectedResearch: Research;
