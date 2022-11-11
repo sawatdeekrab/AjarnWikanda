@@ -1,6 +1,18 @@
 import { Research } from './research';
 
 export const RESEARCHES: Research[] = [
+    { year: 2022, title: 'Some Properties of the New Mixture of Nakagami Distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2022, title: 'Generalization of Two-Sided Length Biased Inverse Gaussian Distributions and Applications', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2022, title: 'MGGD: R Package for Mixture Generalized Gamma Distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2022, title: 'A Generalization of Length-biased Nakagami Distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2022, title: 'Parameter Estimation for Re-Parameterized Length-Biased Inverse Gaussian Distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2021, title: 'Computing Bayesian Bonus-Malus Premium Distinguishing Among Different Multiple Types of Claims', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2021, title: 'On the new weight parameter of the mixture Pareto distribution and its application to real data', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2021, title: 'การวิเคราะห์ประสิทธิภาพผลสำเร็จของการจัดทำโครงการนโยบายของรัฐบาลที่ช่วยเหลือเกษตรกรที่เป็นหนี้ NPLs ที่เข้าร่วมโครงการพักชำระหนี้ข้าวปี 2559/60', language: 'Thai', publishing: 'Journals', downloadLink: '#' },
+    { year: 2021, title: 'R Package for the Two-Parameters Crack Distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2020, title: 'การพยากรณ์ทิศทางของราคาหุ้นรายวันจากข้อความข่าวภาษาไทยโดยใช้วิธีการประมวลผลภาษาธรรมชาติ', language: 'Thai', publishing: 'Journals', downloadLink: '#' },
+    { year: 2020, title: 'The prediction of electricity values in the process of electrolytic copper plating in PCB production through machine learning', language: 'English', publishing: 'Journals', downloadLink: '#' },
+    { year: 2019, title: 'Asymptotic confidence ellipses for length-biased inverse Gaussian distribution', language: 'English', publishing: 'Journals', downloadLink: '#' },
     { year: 2019, title: 'Estimating the Parameters of a Two-parameter Crack Distribution', language: 'English', publishing: 'Journals', downloadLink: 'http://ojs.kmutnb.ac.th/index.php/ijst/article/view/1067' },
     { year: 2018, title: 'Estimation of Asymptotic Confidence Ellipses for Birnbaum-Saunders Distribution.', language: 'Thai', publishing: 'Journals', downloadLink: 'http://science.buu.ac.th/ojs246/index.php/sci/article/view/2093' },
     { year: 2018, title: 'Estimating Parameter for the Mixture Generalized Gamma Distribution.', language: 'English', publishing: 'Conference Proceedings', downloadLink: 'https://dl.acm.org/citation.cfm?id=3177492' },
